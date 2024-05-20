@@ -9,29 +9,31 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/form-image.js" defer></script>
     <script src="js/toggle-btn-nav.js" defer></script>
   </head>
   <body>
     <header class="header-page">
       <nav class="header-container">
-        <img src="img/Proyecto nuevo.png" id="logo-nav" />
+        <a href="#"><img src="img/Proyecto nuevo.png" id="logo-nav" /></a>
+        
         <ul class="navigator">
           <li class="nav-main">
-            <a href="html/hazteSocio.html">¡HAZTE SOCIO!</a>
+            <a href="html/hazteSocio.html">Sobre Nosotros</a>
           </li>
           <li id="programas" class="nav-main">
-            <a href="">PROGRAMAS</a>
+            <a href="#main-plan">Planes</a>
           </li>
           <li class="nav-main">
-            <a href="">ESCUELA VIRTUAL</a>
+            <a href="">Escuela Virtual</a>
           </li>
           <li class="nav-main">
-            <a href="">TIENDA</a>
+            <a href="">Tienda</a>
           </li>
           
         </ul>
         <li id="btn-entrar" class="nav-main">
-          <a>ENTRAR</a>
+          <a>Entrar <i class="fa-solid fa-right-to-bracket"></i></a>
         </li>
         <div class="toggle-btn" >
           <i id="toggle-btn" class="fa-solid fa-bars"></i>
@@ -40,19 +42,19 @@
       </nav>
       <ul id="dropdown-nav">
         <li class="nav-main-dropdown">
-          <a href="html/hazteSocio.html">¡HAZTE SOCIO!</a>
+          <a href="">Sobre Nosotros</a>
         </li>
         <li class="nav-main-dropdown">
-          <a href="">PROGRAMAS</a>
+          <a href="#precios">Planes</a>
         </li>
         <li class="nav-main-dropdown">
-          <a href="">ESCUELA VIRTUAL</a>
+          <a href="">Escuela Virtual</a>
         </li>
         <li class="nav-main-dropdown">
-          <a href="">TIENDA</a>
+          <a href="">Tienda</a>
         </li>
         <li id="btn-entrar-dropdown" class="nav-main-dropdown">
-          <a>ENTRAR</a>
+          <a>Entrar <i class="fa-solid fa-right-to-bracket"></i></a>
         </li>
       </ul>
     </header>
@@ -69,9 +71,94 @@
       <div class="main-content">
         <p>CONSIGUE TU CAMBIO FISICO CON <span>GYMGENIUSTRACKS</span></p>
         <p>ENTRENA Y APRENDE <span>DESDE CASA</span> PARA SER TU MEJOR VERSION</p>
-        <button>COMIENZA HOY TU CAMBIO</button>
+        <button>COMIENZA HOY TU CAMBIO <i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
+    <div class="pop-up-background" id="pop-up-background"></div>
+    <article class="pop-up-form" id="pop-up-form">
+      <img id="img-form" src="img/magymboo.jpg" alt="" />
+      <section id="form-register" class="pop-up-form-register">
+        <p>Registrate</p>
+        <div class="input-container">
+          <input
+            type="text"
+            name=""
+            placeholder="Nombre Completo"
+            id="name"
+          />
+        </div>
+        <div class="input-container">
+          <input
+            type="text"
+            name=""
+            placeholder="Correo Electronico"
+            id="email"
+          />
+        </div>
+        <div class="input-container">
+          <input
+            type="password"
+            placeholder="Contraseña"
+            name=""
+            id="password"
+          />
+        </div>
+        <div class="input-container">
+          <input
+            type="password"
+            placeholder="Repetir Contraseña"
+            name=""
+            id="password"
+          />
+        </div>
+        <div class="container-register">
+          <button id="btn-register">Ingresar</button>
+          <p>
+            ¿Tienes una cuenta creada?
+            <a class="strong" id="btn-sign-in">Iniciar Sesion</a>
+          </p>
+        </div>
+      </section>
+      <section id="form-login" class="pop-up-form-login">
+        <p>Iniciar Sesión</p>
+        <label class="label-form" for="email">Email</label>
+        <div class="input-container">
+          <i class="fa-solid fa-at"></i>
+          <input
+            type="text"
+            name=""
+            placeholder="Correo Electronico"
+            id="email-input"
+          />
+        </div>
+        <label class="label-form" for="password">Contraseña</label>
+        <div class="input-container input-container-password">
+          <i class="fa-solid fa-lock"></i>
+          <input
+            type="password"
+            placeholder="Contraseña"
+            id="password-input"
+          />
+        </div>
+        <div class="forgot-password-container">
+          <div class="remember-cbx">
+            <input type="checkbox" name="" id="remember-cbx">
+            <label for="remember-cbx">Recuérdame</label>
+          </div>
+          <a>¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="container-login">
+          <button id="btn-login">Ingresar</button>
+          <p>
+            ¿Aún no tienes una cuenta?
+            <a class="strong" id="btn-create-account">Crea una aquí</a>
+          </p>
+        </div>
+      </section>
+      <div id="btn-exit-container" class="pop-up-close">
+        <i id="btn-exit" class="fa-regular fa-circle-xmark"></i>
+      </div>
+    </article>
     <div class="gym-info-container">
       <div class="gym-info-container-text">
         <p id="gym-info-title"><span>GYM</span>GENIUSTRACKS</p>
