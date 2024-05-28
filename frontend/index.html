@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/307148e55f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/form-image.js" defer></script>
+    <script src="js/toggle-btn-nav.js" defer></script>
+    <script src="js/login.js" defer></script>
+  </head>
+  <body>
+    <header class="header-page">
+      <nav class="header-container">
+        <a href="#"><img src="img/Proyecto nuevo.png" id="logo-nav" /></a>
+        
+        <ul class="navigator">
+          <li class="nav-main">
+            <a href="">Sobre Nosotros</a>
+          </li>
+          <li id="programas" class="nav-main">
+            <a href="#main-plan">Planes</a>
+          </li>
+          <li class="nav-main">
+            <a href="">Escuela Virtual</a>
+          </li>
+          <li class="nav-main">
+            <a href="">Tienda</a>
+          </li>
+          
+        </ul>
+        <li id="btn-entrar" class="nav-main">
+          <a>Entrar <i class="fa-solid fa-right-to-bracket"></i></a>
+        </li>
+        <div class="toggle-btn" >
+          <i id="toggle-btn" class="fa-solid fa-bars"></i>
+          <i id="toggle-btn-close" class="fa-solid fa-xmark"></i>
+        </div>
+      </nav>
+      <ul id="dropdown-nav">
+        <li class="nav-main-dropdown">
+          <a href="">Sobre Nosotros</a>
+        </li>
+        <li class="nav-main-dropdown">
+          <a href="#precios">Planes</a>
+        </li>
+        <li class="nav-main-dropdown">
+          <a href="">Escuela Virtual</a>
+        </li>
+        <li class="nav-main-dropdown">
+          <a href="">Tienda</a>
+        </li>
+        <li id="btn-entrar-dropdown" class="nav-main-dropdown">
+          <a>Entrar <i class="fa-solid fa-right-to-bracket"></i></a>
+        </li>
+      </ul>
+    </header>
+    <div class="toggle-main">
+      <img src="img/gym-man.png" alt="">
+      <div class="main-content">
+        <p>CONSIGUE TU CAMBIO FISICO CON <span>GYMGENIUSTRACKS</span></p>
+        <p>ENTRENA Y APRENDE <span>DESDE CASA</span> PARA SER TU MEJOR VERSION</p>
+        <button>COMIENZA HOY TU CAMBIO</button>
+      </div>
+    </div>
+    <div class="main-video">
+      <video src="img/videoGym.mp4" loop autoplay muted></video>
+      <div class="main-content">
+        <p>CONSIGUE TU CAMBIO FISICO CON <span>GYMGENIUSTRACKS</span></p>
+        <p>ENTRENA Y APRENDE <span>DESDE CASA</span> PARA SER TU MEJOR VERSION</p>
+        <button>COMIENZA HOY TU CAMBIO <i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+    <div class="pop-up-background" id="pop-up-background"></div>
+    <article class="pop-up-form" id="pop-up-form">
+      <img id="img-form" src="img/magymboo.jpg" alt="" />
+      <section id="form-register" class="pop-up-form-register">
+        <p>Registrate</p>
+        <div class="input-container">
+          <input
+            type="text"
+            name=""
+            placeholder="Nombre Completo"
+            id="name"
+          />
+        </div>
+        <div class="input-container">
+          <input
+            type="text"
+            name=""
+            placeholder="Correo Electronico"
+            id="email"
+          />
+        </div>
+        <div class="input-container">
+          <input
+            type="password"
+            placeholder="Contraseña"
+            name=""
+            id="password"
+          />
+        </div>
+        <div class="input-container">
+          <input
+            type="password"
+            placeholder="Repetir Contraseña"
+            name=""
+            id="repeat-password"
+          />
+        </div>
+        <div class="container-register">
+          <button id="btn-register">Ingresar</button>
+          <p>
+            ¿Tienes una cuenta creada?
+            <a class="strong" id="btn-sign-in">Iniciar Sesion</a>
+          </p>
+        </div>
+      </section>
+      <section id="form-login" class="pop-up-form-login">
+        <p>Iniciar Sesión</p>
+        <label class="label-form" for="email">Email</label>
+        <div class="input-container">
+          <i class="fa-solid fa-at"></i>
+          <input
+            type="text"
+            name=""
+            placeholder="Correo Electronico"
+            id="email-input"
+          />
+        </div>
+        <label class="label-form" for="password">Contraseña</label>
+        <div class="input-container input-container-password">
+          <i class="fa-solid fa-lock"></i>
+          <input
+            type="password"
+            placeholder="Contraseña"
+            id="password-input"
+          />
+        </div>
+        <div class="forgot-password-container">
+          <div class="remember-cbx">
+            <input type="checkbox" name="" id="remember-cbx">
+            <label for="remember-cbx">Recuérdame</label>
+          </div>
+          <a>¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="container-login">
+          <button id="btn-login">Ingresar</button>
+          <p>
+            ¿Aún no tienes una cuenta?
+            <a class="strong" id="btn-create-account">Crea una aquí</a>
+          </p>
+        </div>
+      </section>
+      <div id="btn-exit-container" class="pop-up-close">
+        <i id="btn-exit" class="fa-regular fa-circle-xmark"></i>
+      </div>
+    </article>
+    <div class="gym-info-container">
+      <div class="gym-info-container-text">
+        <p id="gym-info-title"><span>GYM</span>GENIUSTRACKS</p>
+        <p>
+          Este es un espacio dedicado a aquellos que desean mejorar, aprender
+          y lograr resultados desde la comodidad de su hogar. Así que si te
+          identificas con esto... <span class="strong">¡Bienvenido/a!</span>
+        </p>
+        <p>
+          Algunos han estado entrenando con nosotros durante años, mientras
+          que otros nos descubrieron durante momentos como la cuarentena. Pero
+          lo que el tiempo ha demostrado es que todos coinciden en algo: aquí
+          se obtienen resultados. Sí, es posible. Nuestra filosofía es simple,
+          te facilitamos el camino para que logres tus metas.
+        </p>
+        <p>Tú solo tienes que poner tus ganas y un poquito de tu tiempo.</p>
+        <p>
+          <span class="strong">¡Quédate y compruébalo por ti mismo!</span>
+        </p>
+      </div>
+      <div class="gym-info-container-video">
+        <video src="img/videoGym.mp4" controls></video>
+      </div>
+      <p id="toggle-gym-info-title"><span>GYM</span>GENIUSTRACKS</p>
+    </div>
+    <div class="gym-info-banner">
+      <div class="gym-info-banner-container">
+        <p>TU CUERPO ENTIENDE DE ESTÍMULOS, NO DE DÓNDE ENTRENAS</p>
+        <p>
+          Y hacerlo en casa, son todo ventajas. Sin horarios que te limiten.
+          Ahorrando tiempo y dinero en desplazamientos. Pudiendo elegir clases
+          acorde a tu nivel. Evitando ambientes agobiantes. Sin aforos
+          limitados.
+        </p>
+      </div>
+    </div>
+  </main>
+  
+  <div class="plan-container">
+    <p id="precios">Precios</p>
+    <div class="plan">
+      <div class="plan-content">
+        <div class="plan-header">
+          <i class="fa-solid fa-dumbbell"></i>
+          <p class="plan-header-type">Prueba Gratis</p>
+          <p class="plan-header-price">S/ 0</p>
+        </div>
+        <div class="plan-benefits">
+          <div class="benefit">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Primeros 7 DÍAS GRATIS en GYMGENIUSTRACKS con acceso a TODO EL CONTENIDO.</p>
+          </div>
+        </div>
+      </div>
+      <button class="btn-inscribirse">Inscribirse</button>
+    </div>
+    <div class="plan" id="main-plan">
+      <div class="plan-content">
+        <div class="plan-header">
+          <i class="fa-solid fa-dumbbell"></i>
+          <p class="plan-header-type">Plan Mensual</p>
+          <p class="plan-header-price">S/ 40</p>
+        </div>
+        <div class="plan-benefits">
+          <div class="benefit">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Acceso a TODOS los planes de entrenamiento, para que sepas lo que tienes que entrenar cada día.</p>
+          </div>
+          <div class="benefit">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Pautas de alimentación con menús saludables, para que sepas lo que tienes que comer cada día.</p>
+          </div>
+          <div class="benefit">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Nuevas rutinas y contenido cada semana.</p>
+          </div>
+        </div>
+      </div>
+      <button class="btn-inscribirse">Inscribirse</button>
+    </div>
+    <div class="plan">
+      <div class="plan-content">
+        <div class="plan-header">
+          <i class="fa-solid fa-dumbbell"></i>
+          <p class="plan-header-type">Plan Anual</p>
+          <p class="plan-header-price">S/ 300</p>
+        </div>
+        <div class="plan-benefits">
+          <div class="benefit">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Acceso libre a toda la página</p>
+          </div>  
+        </div>
+      </div>
+      <button class="btn-inscribirse">Inscribirse</button>
+    </div>
+  </div>
+  </body>
+</html>
