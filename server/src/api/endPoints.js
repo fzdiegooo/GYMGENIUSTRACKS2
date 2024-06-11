@@ -1,12 +1,16 @@
 const express = require("express")
 const router = express.Router()
-const path = require("path")
-const {login} = require("../controller/loginController.js")
-
-router.get("/home", (req, res)=>{
-    res.sendFile(path.join(__dirname, '../../../frontend/public/home.html'));
-})
+const { login } = require("../controller/loginController.js")
+const { register } = require("../controller/registerController.js")
+const { homedata } = require("../controller/homedataController.js")
+const { userInfo } = require("../controller/userInfoController.js")
 
 router.post("/login", login)
+
+router.post("/register", register)
+
+router.post("/homedata", homedata)
+
+router.post("/userInfo", userInfo)
 
 module.exports = router;

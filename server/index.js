@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 const port = 3000
 const path = require("path")
-const routes = require("./src/api/endpoints") //sale error pero si funciona xd(todo con miniscula si funciona xd)
+const routes = require("./src/api/endPoints") //sale error pero si funciona xd(todo con miniscula si funciona xd)
 const cors = require("cors")
 
 app.use(express.json())
@@ -17,8 +17,16 @@ app.use(cors({
 app.use(express.static(path.join(__dirname, '../frontend/public')));
 app.use("/api", routes)
 
-app.use("/", (req, res)=>{
+app.get("/", (req, res)=>{
     res.sendFile(path.join(__dirname, '../frontend/index.html'))
+})
+
+app.get("/home", (req, res)=>{
+    res.sendFile(path.join(__dirname, '../frontend/public/home.html'));
+})
+
+app.get("/cursos/plan12", (req,res)=>{
+    res.sendFile(path.join(__dirname, '../frontend/public/cursos/curso.html'))
 })
 
 app.listen(port, ()=>{

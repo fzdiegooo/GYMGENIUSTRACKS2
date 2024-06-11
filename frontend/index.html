@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GYMGENIUSTRACKS</title>
     <script
       src="https://kit.fontawesome.com/307148e55f.js"
       crossorigin="anonymous"
@@ -12,6 +12,7 @@
     <script src="js/form-image.js" defer></script>
     <script src="js/toggle-btn-nav.js" defer></script>
     <script src="js/login.js" defer></script>
+    <script src="js/register.js" defer></script>
   </head>
   <body>
     <header class="header-page">
@@ -80,37 +81,60 @@
       <img id="img-form" src="img/magymboo.jpg" alt="" />
       <section id="form-register" class="pop-up-form-register">
         <p>Registrate</p>
-        <div class="input-container">
-          <input
-            type="text"
-            name=""
-            placeholder="Nombre Completo"
-            id="name"
-          />
+        <div class="name-input-container">
+          <div class="input-container">
+            <i class="fa-solid fa-user"></i>
+            <input
+              type="text"
+              name=""
+              placeholder="Nombre"
+              id="name-register"
+            />
+          </div>
+          <div class="input-container">
+            <i class="fa-solid fa-user"></i>
+            <input
+              type="text"
+              name=""
+              placeholder="Apellido"
+              id="lastname-register"
+            />
+          </div>
         </div>
         <div class="input-container">
+          <i class="fa-solid fa-at"></i>
           <input
-            type="text"
+            type="email"
             name=""
             placeholder="Correo Electronico"
-            id="email"
+            id="email-register"
           />
         </div>
+        <div id="email-error" class="register-error">
+          <i class="fa-solid fa-circle-info"></i>
+          Correo ya registrado
+        </div>
         <div class="input-container">
+          <i class="fa-solid fa-lock"></i>
           <input
             type="password"
             placeholder="Contraseña"
             name=""
-            id="password"
+            id="password-register"
           />
         </div>
         <div class="input-container">
+          <i class="fa-solid fa-lock"></i>
           <input
             type="password"
             placeholder="Repetir Contraseña"
             name=""
-            id="repeat-password"
+            id="repeat-password-register"
           />
+        </div>
+        <div id="password-error" class="register-error">
+          <i class="fa-solid fa-circle-info"></i>
+          Las contraseñas no coinciden
         </div>
         <div class="container-register">
           <button id="btn-register">Ingresar</button>
@@ -126,10 +150,10 @@
         <div class="input-container">
           <i class="fa-solid fa-at"></i>
           <input
-            type="text"
+            type="email"
             name=""
             placeholder="Correo Electronico"
-            id="email-input"
+            id="email-login"
           />
         </div>
         <label class="label-form" for="password">Contraseña</label>
@@ -138,8 +162,12 @@
           <input
             type="password"
             placeholder="Contraseña"
-            id="password-input"
+            id="password-login"
           />
+        </div>
+        <div id="login-error" class="register-error">
+          <i class="fa-solid fa-circle-info"></i>
+          Email o contraseña incorrecta
         </div>
         <div class="forgot-password-container">
           <div class="remember-cbx">

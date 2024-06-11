@@ -150,16 +150,18 @@ a {
   animation: buttonStartNow 1s ease-out infinite;
 }
 
-.main-content button:hover{
+.main-content button:hover {
   background-color: #d10c65;
 }
 
-@keyframes buttonStartNow{
-  0%{
+@keyframes buttonStartNow {
+  0% {
     scale: 1;
-  }50%{
-    scale: .9;
-  }100%{
+  }
+  50% {
+    scale: 0.9;
+  }
+  100% {
     scale: 1;
   }
 }
@@ -228,7 +230,7 @@ a {
   color: #fff;
 }
 
-.pop-up-background{
+.pop-up-background {
   width: 100%;
   height: 100%;
   backdrop-filter: blur(5px);
@@ -248,23 +250,26 @@ a {
   border-radius: 20px;
   display: none;
   grid-template-columns: 1fr 1fr;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   z-index: 99;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  animation: popUp .4s ease-out;
+  transform: translate(-50%, -50%);
+  animation: popUp 0.4s ease-out;
 }
 
-@keyframes popUp{
-  0%{
-    transform: translate(-50%,-500px);
-  }100%{
-    transform: translate(-50%,-50%);
+@keyframes popUp {
+  0% {
+    transform: translate(-50%, -500px);
+  }
+  100% {
+    transform: translate(-50%, -50%);
   }
 }
 
-.pop-up-close{
+.pop-up-close {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -277,14 +282,13 @@ a {
   z-index: 7;
 }
 
-
-.pop-up-close i{
+.pop-up-close i {
   color: #353846;
   font-size: 25px;
   font-weight: 900;
 }
 
-#img-form{
+#img-form {
   position: absolute;
   top: 0;
   left: 0;
@@ -294,7 +298,7 @@ a {
   z-index: 5;
 }
 
-.pop-up-form-register{
+.pop-up-form-register {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,52 +307,60 @@ a {
   outline: none;
 }
 
-.pop-up-form-register p{
+.pop-up-form-register p {
   font-size: 40px;
   font-weight: 700;
 }
 
-@keyframes rightToMiddle{
-  0%{
+@keyframes rightToMiddle {
+  0% {
     transform: translateX(0);
-  }30%{
+  }
+  30% {
     opacity: 1;
-  }100%{
+  }
+  100% {
     transform: translateX(-150px);
     opacity: 0;
   }
 }
 
-@keyframes leftToMiddle{
-  0%{
+@keyframes leftToMiddle {
+  0% {
     transform: translateX(0);
-  }30%{
+  }
+  30% {
     opacity: 1;
-  }100%{
+  }
+  100% {
     transform: translateX(150px);
     opacity: 0;
   }
 }
 
-@keyframes middleToLeft{
-  0%{
+@keyframes middleToLeft {
+  0% {
     transform: translateX(150px);
     opacity: 0;
-  }30%{
+  }
+  30% {
     opacity: 0;
-  }100%{
+  }
+  100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
 
-@keyframes middleToRight{
-  0%{
+@keyframes middleToRight {
+  0% {
     transform: translateX(-150px);
     opacity: 0;
-  }30%{
+  }
+  30% {
     opacity: 0;
-  }100%{
+  }
+  100% {
     transform: translateX(0);
     opacity: 1;
   }
@@ -370,7 +382,17 @@ a {
   animation: middleToRight 0.4s ease-out;
 }
 
-#btn-register{
+.register-error {
+  text-align: start;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 50px;
+  margin: -15px;
+  display: none;
+  color: red;
+}
+
+#btn-register {
   height: 50px;
   width: 300px;
   font-weight: 500;
@@ -380,28 +402,28 @@ a {
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#btn-register:hover{
+#btn-register:hover {
   background: #e10165;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
-.container-register p{
+.container-register p {
   text-align: center;
   margin-top: 10px;
   font-size: 12px;
   font-weight: 400;
 }
 
-.container-register a:hover{
+.container-register a:hover {
   cursor: pointer;
   color: red;
 }
 
-.pop-up-form-login{
+.pop-up-form-login {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -410,7 +432,13 @@ a {
   gap: 10px;
 }
 
-.input-container{
+.name-input-container{
+  display: flex;
+  width: 300px;
+  gap: 3px;
+}
+
+.input-container {
   display: flex;
   align-items: center;
   gap: 2px;
@@ -422,28 +450,28 @@ a {
   outline: none;
   border: 1.5px solid #ecedec;
   position: relative;
-  transition: all .1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
-.input-container:focus-within{
+.input-container:focus-within {
   border: 1.5px solid #f8006f;
   box-shadow: #f8006f 0px 0px 5px;
-  transition: all .1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
-.input-container input{
+.input-container input {
   width: 100%;
   padding-left: 10px;
   border: none;
   outline: none;
   font-size: 16px;
 }
-.pop-up-form-login p{
+.pop-up-form-login p {
   font-size: 40px;
   font-weight: 700;
 }
 
-.forgot-password-container{
+.forgot-password-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -452,29 +480,29 @@ a {
   margin-top: -5px;
 }
 
-.forgot-password-container a{
+.forgot-password-container a {
   text-align: left;
   cursor: pointer;
   font-size: 12px;
 }
 
-.remember-cbx{
+.remember-cbx {
   display: flex;
   gap: 5px;
   font-size: 12px;
 }
 
-.forgot-password-container a:hover{
+.forgot-password-container a:hover {
   color: red;
 }
 
-.label-form{
+.label-form {
   width: 300px;
   font-weight: 500;
   text-align: start;
 }
 
-#btn-login{
+#btn-login {
   height: 50px;
   width: 300px;
   font-weight: 500;
@@ -485,23 +513,23 @@ a {
   border: none;
   cursor: pointer;
   margin-top: 10px;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#btn-login:hover{
+#btn-login:hover {
   background: #e10165;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
-.container-login p{
+.container-login p {
   text-align: center;
   margin-top: 10px;
   font-size: 12px;
   font-weight: 400;
 }
 
-.container-login a:hover{
+.container-login a:hover {
   cursor: pointer;
   color: red;
 }
@@ -582,7 +610,7 @@ a {
   flex-wrap: wrap;
 }
 
-.plan-container #precios{
+.plan-container #precios {
   display: none;
 }
 
@@ -707,25 +735,27 @@ a {
     justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-  
+
   .pop-up-form {
     max-width: 350px;
     height: 500px;
     display: none;
     grid-template-columns: none;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     z-index: 99;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    animation: popUp .4s ease-out;
+    transform: translate(-50%, -50%);
+    animation: popUp 0.4s ease-out;
   }
-  
-  #img-form{
+
+  #img-form {
     display: none;
   }
-  
-  .pop-up-form-register{
+
+  .pop-up-form-register {
     display: none;
     justify-content: center;
     align-items: center;
@@ -733,13 +763,13 @@ a {
     gap: 20px;
     outline: none;
   }
-  
-  .pop-up-form-register p{
+
+  .pop-up-form-register p {
     font-size: 40px;
     font-weight: 700;
   }
-  
-  #btn-register{
+
+  #btn-register {
     height: 50px;
     width: 300px;
     font-weight: 500;
@@ -749,28 +779,28 @@ a {
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
-  
-  #btn-register:hover{
+
+  #btn-register:hover {
     background: #e10165;
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
-  
-  .container-register p{
+
+  .container-register p {
     text-align: center;
     margin-top: 10px;
     font-size: 12px;
     font-weight: 400;
   }
-  
-  .container-register a{
+
+  .container-register a {
     cursor: pointer;
     color: #e10165;
   }
-  
-  .pop-up-form-login{
+
+  .pop-up-form-login {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -778,15 +808,14 @@ a {
     outline: none;
     gap: 10px;
   }
-  
-  .forgot-password-container a{
+
+  .forgot-password-container a {
     color: #e10165;
   }
 
-  .container-login a{
+  .container-login a {
     color: #e10165;
   }
-  
 }
 
 @media (max-width: 600px) {
@@ -813,7 +842,7 @@ a {
     cursor: pointer;
   }
 
-  #toggle-btn-close{
+  #toggle-btn-close {
     display: none;
   }
 
@@ -870,7 +899,7 @@ a {
     padding: 0 24px 40px 24px;
   }
 
-  .plan-container #precios{
+  .plan-container #precios {
     display: block;
     text-align: start;
     font-size: 45px;
@@ -934,8 +963,10 @@ a {
     outline: none;
     cursor: pointer;
     background: #fff;
-    box-shadow: 0 4px 9px rgba(0, 0, 0, .047), 0 1.54074px 2.86667px rgba(0, 0, 0, .073), 0 .325926px .733333px rgba(0, 0, 0, .12);
-    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.047),
+      0 1.54074px 2.86667px rgba(0, 0, 0, 0.073),
+      0 0.325926px 0.733333px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   #main-plan {
@@ -956,6 +987,5 @@ a {
   #main-plan .btn-inscribirse {
     background: #e10165;
     color: #fff;
-    
   }
 }

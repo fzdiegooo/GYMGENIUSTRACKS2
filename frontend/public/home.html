@@ -1,11 +1,219 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Bienvenido</h1>
-</body>
+    <script
+      src="https://kit.fontawesome.com/307148e55f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/carrusel.js" defer></script>
+    <script src="../js/user-info-form.js" defer></script>
+    <script src="../js/home.js" defer></script>
+    <script src="../js/logout.js" defer></script>
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
+  <body>
+    <div id="user-info-form">
+      <form>
+        <div class="input-container">
+          <p>Peso</p>
+          <input
+            type="number"
+            placeholder="Indique su peso(kg)"
+            id="peso-input"
+          />
+        </div>
+        <div class="input-container">
+          <p>Fecha Nacimiento</p>
+          <input type="date" id="fecha-nacimiento-input" />
+        </div>
+        <div class="input-container">
+          <p>Altura</p>
+          <input
+            type="number"
+            placeholder="Indique su altura(cm)"
+            id="altura-input"
+          />
+        </div>
+        <div class="input-container">
+          <p>Nivel</p>
+          <select name="" id="nivel-input">
+            <option value="1">Principiante</option>
+            <option value="2">Intermedio</option>
+            <option value="3">Avanzado</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <p>Seleccione su objetivo</p>
+          <div class="radio-input-group">
+            <div class="radio-input-container">
+              <input type="radio" id="objetivo-adelgazar" name="objetivo" value="1"/>
+              <div class="radio-title">
+                <img src="img/gordo.png" alt="" />
+                <label for="objetivo-adelgazar">Adelgazar</label>
+              </div>
+            </div>
+            <div class="radio-input-container">
+              <input type="radio" id="objetivo-musculo" name="objetivo" value="2"/>
+              <div class="radio-title">
+                <img src="img/musculo.png" alt="" />
+                <label for="objetivo-musculo">Ganar Musculo</label>
+              </div>
+            </div>
+            <div class="radio-input-container">
+              <input type="radio" id="objetivo-salud" name="objetivo" value="3"/>
+              <div class="radio-title">
+                <img src="img/estar-saludable.png" alt="" />
+                <label for="objetivo-salud">Estar Saludable</label>
+              </div>
+            </div>
+            <div class="radio-input-container">
+              <input type="radio" id="objetivo-tonificar" name="objetivo" value="4"/>
+              <div class="radio-title">
+                <img src="img/tonificar.png" alt="" />
+                <label for="objetivo-tonificar">Tonificar</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <button id="confirm-btn">Confirmar</button>
+    </div>
+    <div class="main-container">
+      <aside class="panel-container">
+        <div>
+          <section class="profile-section">
+            <img src="../img/logo-blanco.png" alt="" />
+          </section>
+          <section class="options-section">
+            <ul class="options-nav">
+              <li class="option" id="btn-inicio">
+                <i class="fa-solid fa-house"></i>
+                <p>Inicio</p>
+              </li>
+              <li class="option">
+                <i class="fa-solid fa-list-check"></i>
+                <p>Progreso</p>
+              </li>
+              <li class="option">
+                <i class="fa-solid fa-gear"></i>
+                <p>Opciones</p>
+              </li>
+              <li class="option">
+                <i class="fa-solid fa-unlock"></i>
+                <p>Membresia</p>
+              </li>
+              <li class="option" id="btn-logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>Cerrar Sesión</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div>
+          <section class="divisor-aside"></section>
+          <div class="profile-user">
+            <img
+              id="pic-profile-user"
+              src="../img/perro-estudioso.jpg"
+              alt=""
+            />
+            <div id="welcome-container">
+              <p>Bienvenido/a</p>
+              <p id="welcome-user"></p>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <article id="inicio-container">
+        <div class="inicio-container-page">
+          <div class="container-carousel">
+            <div class="carruseles" id="slider">
+              <section class="slider-section">
+                <img
+                  src="https://static.abc.es/media/bienestar/2020/03/13/deporte-casa-kS0--1024x512@abc.jpg"
+                />
+              </section>
+              <section class="slider-section">
+                <img
+                  src="https://media.glamour.mx/photos/6190783ca6e030d6480fa50a/master/w_1600%2Cc_limit/222553.jpg"
+                />
+              </section>
+              <section class="slider-section">
+                <img
+                  src="https://millanut.com/wp-content/uploads/2023/08/Entrenamiento-en-casa-vs.-Gimnasio-Ventajas-y-desventajas.jpeg"
+                />
+              </section>
+            </div>
+            <div class="btn-left"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="btn-right"><i class="fa-solid fa-angle-right"></i></div>
+          </div>
+          <div class="cursos-container">
+            <div class="cursos-disponibles-container">
+              <h2>Cursos Disponibles</h2>
+              <div class="cursos-disponibles-carrusel">
+                <a class="curso" id="curso-plan12">
+                  <img
+                    src="https://t1.uc.ltmcdn.com/es/posts/2/8/2/rutina_de_ejercicios_en_casa_dia_1_49282_0_600.jpg"
+                    alt=""
+                  />
+                  <div class="curso-info">
+                    <p>Plan 12 semanas</p>
+                    <p>
+                      Aumenta tu masa muscular con este plan avanzado de
+                      empuje-tracción-pierna
+                    </p>
+                  </div>
+                </a>
+                <a class="curso" href="">
+                  <img
+                    src="https://img.freepik.com/foto-gratis/formacion-radiodifusion-hombre-tiro-completo_23-2149177969.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1714521600&semt=ais"
+                    alt=""
+                  />
+                  <div class="curso-info">
+                    <p>Plan 12 semanas</p>
+                    <p>
+                      Aumenta tu masa muscular con este plan avanzado de
+                      empuje-tracción-pierna
+                    </p>
+                  </div>
+                </a>
+                <a class="curso" href="">
+                  <img
+                    src="https://media.revistagq.com/photos/615c4bf41229a195bf274c61/16:9/w_2560%2Cc_limit/GettyImages-627523378.jpg"
+                    alt=""
+                  />
+                  <div class="curso-info">
+                    <p>Plan 12 semanas</p>
+                    <p>
+                      Aumenta tu masa muscular con este plan avanzado de
+                      empuje-tracción-pierna
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article id="plan12">
+        <img
+          src="https://t1.uc.ltmcdn.com/es/posts/2/8/2/rutina_de_ejercicios_en_casa_dia_1_49282_0_600.jpg"
+          alt=""
+        />
+        <div class="plan12-videos">
+          <h2>Press Banca</h2>
+          <video src="../img/press-banca.mp4" muted controls></video>
+          <h2>Fondos</h2>
+          <video src="../img/fondos.mp4" muted controls></video>
+          <h2>Dominadas</h2>
+          <video src="../img/dominadas.mp4" muted controls></video>
+          <h2>Curl Biceps</h2>
+          <video src="../img/curl-biceps.mp4" muted controls></video>
+        </div>
+      </article>
+    </div>
+  </body>
 </html>
