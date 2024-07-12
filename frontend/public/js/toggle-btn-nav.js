@@ -6,6 +6,7 @@ toggleButton.addEventListener("click",()=>{
     dropdownNav.style.display = "flex"
     toggleButton.style.display ="none"
     toggleButtonClose.style.display = "block"
+    toggleButtonClose.style.color = "white"
 })
 
 toggleButtonClose.addEventListener("click",()=>{

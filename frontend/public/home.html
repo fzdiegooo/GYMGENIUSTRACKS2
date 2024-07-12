@@ -49,28 +49,48 @@
           <p>Seleccione su objetivo</p>
           <div class="radio-input-group">
             <div class="radio-input-container">
-              <input type="radio" id="objetivo-adelgazar" name="objetivo" value="1"/>
+              <input
+                type="radio"
+                id="objetivo-adelgazar"
+                name="objetivo"
+                value="1"
+              />
               <div class="radio-title">
                 <img src="img/gordo.png" alt="" />
                 <label for="objetivo-adelgazar">Adelgazar</label>
               </div>
             </div>
             <div class="radio-input-container">
-              <input type="radio" id="objetivo-musculo" name="objetivo" value="2"/>
+              <input
+                type="radio"
+                id="objetivo-musculo"
+                name="objetivo"
+                value="2"
+              />
               <div class="radio-title">
                 <img src="img/musculo.png" alt="" />
                 <label for="objetivo-musculo">Ganar Musculo</label>
               </div>
             </div>
             <div class="radio-input-container">
-              <input type="radio" id="objetivo-salud" name="objetivo" value="3"/>
+              <input
+                type="radio"
+                id="objetivo-salud"
+                name="objetivo"
+                value="3"
+              />
               <div class="radio-title">
                 <img src="img/estar-saludable.png" alt="" />
                 <label for="objetivo-salud">Estar Saludable</label>
               </div>
             </div>
             <div class="radio-input-container">
-              <input type="radio" id="objetivo-tonificar" name="objetivo" value="4"/>
+              <input
+                type="radio"
+                id="objetivo-tonificar"
+                name="objetivo"
+                value="4"
+              />
               <div class="radio-title">
                 <img src="img/tonificar.png" alt="" />
                 <label for="objetivo-tonificar">Tonificar</label>
@@ -82,7 +102,8 @@
       <button id="confirm-btn">Confirmar</button>
     </div>
     <div class="main-container">
-      <aside class="panel-container">
+      <aside id="panel-container" class="panel-container">
+        <i id="btn-cerrar-aside" class="fa-solid fa-angles-left"></i>
         <div>
           <section class="profile-section">
             <img src="../img/logo-blanco.png" alt="" />
@@ -93,11 +114,15 @@
                 <i class="fa-solid fa-house"></i>
                 <p>Inicio</p>
               </li>
+              <li class="option" id="btn-nutricion">
+                <i class="fa-solid fa-carrot"></i>
+                <p>Nutrición</p>
+              </li>
               <li class="option">
                 <i class="fa-solid fa-list-check"></i>
                 <p>Progreso</p>
               </li>
-              <li class="option">
+              <li class="option" id="btn-opciones">
                 <i class="fa-solid fa-gear"></i>
                 <p>Opciones</p>
               </li>
@@ -127,91 +152,213 @@
           </div>
         </div>
       </aside>
-      <article id="inicio-container">
+      <article id="inicio-container" class="page-container">
         <div class="inicio-container-page">
           <div class="container-carousel">
-            <div class="carruseles" id="slider">
-              <section class="slider-section">
-                <img
-                  src="https://static.abc.es/media/bienestar/2020/03/13/deporte-casa-kS0--1024x512@abc.jpg"
-                />
-              </section>
-              <section class="slider-section">
-                <img
-                  src="https://media.glamour.mx/photos/6190783ca6e030d6480fa50a/master/w_1600%2Cc_limit/222553.jpg"
-                />
-              </section>
-              <section class="slider-section">
-                <img
-                  src="https://millanut.com/wp-content/uploads/2023/08/Entrenamiento-en-casa-vs.-Gimnasio-Ventajas-y-desventajas.jpeg"
-                />
-              </section>
+            <div class="slide slide-1">
+              <img
+                src="https://granvita.com/wp-content/uploads/2020/06/header_ejercicioscasa.jpg"
+                alt=""
+              />
             </div>
-            <div class="btn-left"><i class="fa-solid fa-angle-left"></i></div>
-            <div class="btn-right"><i class="fa-solid fa-angle-right"></i></div>
+            <div class="slide slide-2">
+              <img
+                src="https://millanut.com/wp-content/uploads/2023/08/Entrenamiento-en-casa-vs.-Gimnasio-Ventajas-y-desventajas.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="slide slide-3">
+              <img
+                src="https://media.glamour.mx/photos/6190783ca6e030d6480fa50a/master/w_1600%2Cc_limit/222553.jpg"
+                alt=""
+              />
+            </div>
           </div>
           <div class="cursos-container">
-            <div class="cursos-disponibles-container">
-              <h2>Cursos Disponibles</h2>
-              <div class="cursos-disponibles-carrusel">
-                <a class="curso" id="curso-plan12">
-                  <img
-                    src="https://t1.uc.ltmcdn.com/es/posts/2/8/2/rutina_de_ejercicios_en_casa_dia_1_49282_0_600.jpg"
-                    alt=""
-                  />
-                  <div class="curso-info">
-                    <p>Plan 12 semanas</p>
-                    <p>
-                      Aumenta tu masa muscular con este plan avanzado de
-                      empuje-tracción-pierna
-                    </p>
-                  </div>
-                </a>
-                <a class="curso" href="">
-                  <img
-                    src="https://img.freepik.com/foto-gratis/formacion-radiodifusion-hombre-tiro-completo_23-2149177969.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1714521600&semt=ais"
-                    alt=""
-                  />
-                  <div class="curso-info">
-                    <p>Plan 12 semanas</p>
-                    <p>
-                      Aumenta tu masa muscular con este plan avanzado de
-                      empuje-tracción-pierna
-                    </p>
-                  </div>
-                </a>
-                <a class="curso" href="">
-                  <img
-                    src="https://media.revistagq.com/photos/615c4bf41229a195bf274c61/16:9/w_2560%2Cc_limit/GettyImages-627523378.jpg"
-                    alt=""
-                  />
-                  <div class="curso-info">
-                    <p>Plan 12 semanas</p>
-                    <p>
-                      Aumenta tu masa muscular con este plan avanzado de
-                      empuje-tracción-pierna
-                    </p>
-                  </div>
-                </a>
-              </div>
+            <div
+              class="cursos-disponibles-container"
+              id="cursos-disponibles-container"
+            >
+              <h2>Cursos Recomendados</h2>
             </div>
           </div>
         </div>
       </article>
-      <article id="plan12">
-        <img
-          src="https://t1.uc.ltmcdn.com/es/posts/2/8/2/rutina_de_ejercicios_en_casa_dia_1_49282_0_600.jpg"
-          alt=""
-        />
-        <div class="plan12-videos">
-          <h2>Press Banca</h2>
-          <video src="../img/press-banca.mp4" muted controls></video>
-          <h2>Fondos</h2>
-          <video src="../img/fondos.mp4" muted controls></video>
-          <h2>Dominadas</h2>
-          <video src="../img/dominadas.mp4" muted controls></video>
-          <h2>Curl Biceps</h2>
-          <video src="../img/curl-biceps.mp4" muted controls></video>
+      <article id="clases-container" class="page-container"></article>
+      <article id="nutricion-container" class="page-container">
+        <div class="inicio-container-page">
+          <img
+            id="nutricion-img"
+            src="https://cemp.es/wp-content/uploads/2022/10/CEMPBLOG-importancia-nutricion-deportiva-1022.jpg"
+            alt=""
+          />
+          <h2 id="nutricion-titulo">Guía de nutrición fitness</h2>
+          <div>
+            <ul class="lista-nutricion">
+              <li>
+                <p>
+                  <strong>La importancia de los hidratos de carbono:</strong>
+                  Los hidratos de carbono son fundamentales en una alimentación
+                  para ir al gimnasio, debiendo saber que, cuanta mayor
+                  intensidad de entrenamiento, se necesitarán más carbohidratos.
+                  No obstante, aunque son necesarios, no hay que caer en el
+                  error de consumirlos en exceso.
+                </p>
+                <img
+                  src="https://images.ecestaticos.com/FSdwv0FIY86ho2VEqPiUtGC11Fc=/0x0:0x0/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F2ec%2F51f%2F77e%2F2ec51f77e22c7e2ce9721c8ce73d73aa.jpg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <p>
+                  <strong>Ingesta de proteína:</strong> Los músculos están
+                  compuestos de proteína, pero esto no quiere decir que el hecho
+                  de comer más cantidad suponga que se va a ganar una mayor
+                  cantidad de masa muscular. Para ganar músculo hay que
+                  ejercitarse en el gimnasio y es suficiente con consumir 800 mg
+                  de proteína por kg de peso al día.
+                </p>
+                <img
+                  src="https://statics-cuidateplus.marca.com/cms/2024-04/proteinas.jpg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <p>
+                  <strong>Grasas, vitaminas y minerales:</strong> Aunque quieras
+                  perder peso y deshacerte de esos kilos de más, es necesario
+                  que incluyas grasas saludables en tu alimentación, ya que son
+                  necesarias para disfrutar de una buena salud y tener
+                  suficiente energía. De igual forma, es fundamental que las
+                  vitaminas y los minerales deben aparecer siempre en la dieta.
+                  Para este aporte se recomienda comer aguacate, frutos secos y
+                  usar siempre aceite de oliva.
+                </p>
+                <img
+                  src="https://www.gob.mx/cms/uploads/article/main_image/33680/Unknown.jpeg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <p>
+                  <strong>Hidratación:</strong> Dentro de la nutrición tenemos
+                  que recordar la importancia de la hidratación. Es importante
+                  que bebas agua para ayudar a tu cuerpo a que pueda asimilar
+                  los nutrientes. Por ello, bebe todo lo que puedas antes del
+                  entrenamiento y, una vez que te encuentres en él, un poco cada
+                  10-20 minutos.
+                </p>
+                <img
+                  src="https://www.pescanova.pe/wp-content/uploads/2021/08/como-hidratarse-en-el-verano-1.jpg"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article id="opciones-container" class="page-container">
+        <div class="inicio-container-page">
+          <form action="">
+            <div class="input-container">
+              <p>Nombre</p>
+              <input type="text" name="" id="nombre-input-opciones">
+            </div>
+            <div class="input-container">
+              <p>Apellido</p>
+              <input type="text" name="" id="apellido-input-opciones">
+            </div>
+            <div class="input-container">
+              <p>Correo</p>
+              <input type="text" name="" id="email-input-opciones">
+            </div>
+            <div class="input-container">
+              <p>Contraseña</p>
+              <input type="text" name="" id="password-input-opciones">
+            </div>
+            <div class="input-container">
+              <p>Peso</p>
+              <input
+                type="number"
+                placeholder="Indique su peso(kg)"
+                id="peso-input-opciones"
+              />
+            </div>
+            <div class="input-container">
+              <p>Fecha Nacimiento</p>
+              <input type="date" id="fecha-nacimiento-input-opciones" />
+            </div>
+            <div class="input-container">
+              <p>Altura</p>
+              <input
+                type="number"
+                placeholder="Indique su altura(cm)"
+                id="altura-input-opciones"
+              />
+            </div>
+            <div class="input-container">
+              <p>Nivel</p>
+              <select name="" id="nivel-input-opciones">
+                <option value="1">Principiante</option>
+                <option value="2">Intermedio</option>
+                <option value="3">Avanzado</option>
+              </select>
+            </div>
+            <div class="input-container">
+              <p>Seleccione su objetivo</p>
+              <div class="radio-input-group">
+                <div class="radio-input-container">
+                  <input
+                    type="radio"
+                    id="objetivo-adelgazar-opciones"
+                    name="objetivoOpciones"
+                    value="1"
+                  />
+                  <div class="radio-title">
+                    <img src="img/gordo.png" alt="" />
+                    <label for="objetivo-adelgazar">Adelgazar</label>
+                  </div>
+                </div>
+                <div class="radio-input-container">
+                  <input
+                    type="radio"
+                    id="objetivo-musculo-opciones"
+                    name="objetivoOpciones"
+                    value="2"
+                  />
+                  <div class="radio-title">
+                    <img src="img/musculo.png" alt="" />
+                    <label for="objetivo-musculo">Ganar Musculo</label>
+                  </div>
+                </div>
+                <div class="radio-input-container">
+                  <input
+                    type="radio"
+                    id="objetivo-salud-opciones"
+                    name="objetivoOpciones"
+                    value="3"
+                  />
+                  <div class="radio-title">
+                    <img src="img/estar-saludable.png" alt="" />
+                    <label for="objetivo-salud">Estar Saludable</label>
+                  </div>
+                </div>
+                <div class="radio-input-container">
+                  <input
+                    type="radio"
+                    id="objetivo-tonificar-opciones"
+                    name="objetivoOpciones"
+                    value="4"
+                  />
+                  <div class="radio-title">
+                    <img src="img/tonificar.png" alt="" />
+                    <label for="objetivo-tonificar">Tonificar</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <button id="btn-actualizar-datos">Actulizar Datos</button>
         </div>
       </article>
     </div>

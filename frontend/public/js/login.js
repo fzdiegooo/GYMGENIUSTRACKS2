@@ -25,6 +25,8 @@ btnLogin.addEventListener("click", (e) => {
       }else{
         localStorage.setItem('token', result.token)
         localStorage.setItem('user', result.email)
+        localStorage.setItem("me", JSON.stringify(result.user))
+        console.log(result.user);
         console.log(result.token)
         window.location.href = "/home"
 

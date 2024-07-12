@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   btnLogout.addEventListener("click", () => {
     localStorage.removeItem("token"); 
     localStorage.removeItem("user"); 
+    localStorage.removeItem("me"); 
     window.location.href = "/"; 
   });
 

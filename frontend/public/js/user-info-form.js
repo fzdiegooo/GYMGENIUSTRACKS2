@@ -4,6 +4,7 @@ const alturaInput = document.getElementById("altura-input");
 const nivelInput = document.getElementById("nivel-input");
 const confirmarButton = document.getElementById("confirm-btn")
 const objetivoInput = document.querySelectorAll("input[name = objetivo]")
+const form = document.getElementById("user-info-form")
 let userData
 let objetivoSelect
 
@@ -24,19 +25,25 @@ confirmarButton.addEventListener("click", ()=>{
     }
     console.log(userData)
 
-    fetch("http://localhost:3000/api/userInfo", {
-        method: "POST",
-        headers:{
-            "content-type": "application/json"
-        },
-        body: JSON.stringify(userData)
-    })
-    .then((response) => response.json())
-    .then((result) =>{
-        console.log(result.message);
-        location.reload()
-    })
-    .catch((error)=>{
-        console.log(error);
-    })
+    if(pesoInput.value && fechaNacInput.value && alturaInput.value && nivelInput.value && objetivoSelect ){
+        fetch("http://localhost:3000/api/userInfo", {
+            method: "POST",
+            headers:{
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(userData)
+        })
+        .then((response) => response.json())
+        .then((result) =>{
+            console.log(result.message);
+            form.style.display = "none"
+        })
+        .catch((error)=>{
+            console.log(error);
+        })
+    }else{
+        window.alert("Complete todos los campos")
+    }
+
+    
 })

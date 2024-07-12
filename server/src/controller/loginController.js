@@ -15,7 +15,8 @@ module.exports.login = (req, res) => {
       if (result.length > 0) {
         const token = jwt.sign({email}, "Stack", {expiresIn: "1h"})
         console.log(result);
-        res.send({token, email});
+        const user = result[0];
+        res.send({token, email, user});
       } else {
         console.log("Wrong user");
         res.send({ message: "Wrong user" });
